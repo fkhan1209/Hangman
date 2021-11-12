@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Yuji+Boku&display=swap');
+
+body {
+    background-image:url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    max-height: 90vh;
+    zoom: 80%;
+  }
+  
+  main {
+    max-width: 610px;
+    margin: auto;
+    max-height: fit-content;
+  }
+  
+  h1, h5 {
+    text-align: center;
+    color: rgb(255, 255, 153);
+    font-family: "Yuji Boku", serif;
+  }
+  
+  .win {
+    color: white;
+    background-color: plum;
+  }
+  
+  .loss {
+    color: white;
+    background-color: black;
+  }
+  
+  #word {
+    letter-spacing: 10px;
+    text-align: right;
+    font-size: 24pt;
+    color: rgb(255, 255, 153);
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  #guesses {
+    margin-left: 30px;
+    text-align: right;
+    font-size: 16pt;
+    color: rgb(255, 255, 153);
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .guess {
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid rgb(255, 255, 153);
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  @media only screen and (min-device-width: 375px ) and (max-device-width: 667px) {
+      #guesses {
+      text-align: right;
+      font-size: 24pt;
+      color: rgb(255, 255, 153);
+      font-weight: bold;
+      font-family: "Open Sans", sans-serif;
+    }
+  
+    .guess {
+      padding: 40px;
+      display: inline-block;
+      border: 2px solid rgb(255, 255, 153);
+      border-radius: 10px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  }
+  
+  #guessBox {
+      height: 60px;
+      border-radius: 10px;
+      padding-top: 5px;
+      font-size: 18pt;
+      width: 200px;
+      padding-left: 30px;
+  }
+  
+  /* Buttons */
+  .button {
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: right;
+    text-decoration: none;
+    outline: none;
+    color: #666;
+    background-color: rgb(255, 255, 153);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: rgb(224, 224, 139)}
+  
+  .button:active {
+    background-color: rgb(224, 224, 139);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  #gallows {
+    width: 1500px;
+    height: 700px;
+    float: right;
+    position: center;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
